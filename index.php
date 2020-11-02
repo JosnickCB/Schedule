@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
-   <title>CSS MenuMaker</title>
+   <title>Inicio</title>
 </head>
 <body>
 
@@ -23,6 +23,6 @@
 </ul>
 </div>
 
-<img src = "pabellonCS.png">
+<img src = "pabellonCS.png" width="1350" height="575">
 </body>
 <html>
