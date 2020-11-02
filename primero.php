@@ -15,10 +15,10 @@
 <ul>
    <li class='active'><a href='index.php'>Home</a></li>
    <li><a href='#'>Primero</a></li>
-   <li><a href='#'>Segundo</a></li>
-   <li><a href='#'>Tercero</a></li>
-   <li><a href='#'>Cuarto</a></li>
-   <li><a href='#'>Quinto</a></li>
+   <li><a href='segundo.php'>Segundo</a></li>
+   <li><a href='tercero.php'>Tercero</a></li>
+   <li><a href='cuarto.php'>Cuarto</a></li>
+   <li><a href='quinto.php'>Quinto</a></li>
    <li><a href='#'>Ingresar</a></li>
 </ul>
 </div>
@@ -193,8 +193,8 @@
       <td>Arte Computacional</td>
       <td>Ingles técnico Prof. II teo (B)</td>
       <td>Estructuras Discretas II Lab (A)</td>
-      <td>Example 9</td>
-      <td>Example 10</td>
+      <td></td>
+      <td></td>
     </tr>
 	</table>
 </body>
