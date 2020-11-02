@@ -13,8 +13,8 @@
 
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='#'>Home</a></li>
-   <li><a href='primero.php'>Primero</a></li>
+   <li class='active'><a href='index.php'>Home</a></li>
+   <li><a href='#'>Primero</a></li>
    <li><a href='#'>Segundo</a></li>
    <li><a href='#'>Tercero</a></li>
    <li><a href='#'>Cuarto</a></li>
@@ -22,7 +22,7 @@
    <li><a href='#'>Ingresar</a></li>
 </ul>
 </div>
-
-<img src = "pabellonCS.png">
+<table>
+</table>
 </body>
 <html>
