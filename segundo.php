@@ -6,20 +6,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
-   <title>Primero</title>
+   <title>Segundo</title>
 </head>
 <body>
 
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='index.php'>Home</a></li>
+   <li class='active'><a href='#'>Home</a></li>
    <li><a href='primero.php'>Primero</a></li>
-   <li><a href='#'>Segundo</a></li>
+   <li><a href='segundo.php'>Segundo</a></li>
    <li><a href='tercero.php'>Tercero</a></li>
    <li><a href='cuarto.php'>Cuarto</a></li>
    <li><a href='quinto.php'>Quinto</a></li>
-   <li><a href='#'>Ingresar</a></li>
+   <li><a href='login.php'>Ingresar</a></li>
 </ul>
 </div>
 <table class = flat-table>
@@ -192,7 +191,7 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
+      <td>Algebra Lineal Numerica (Lab A)</td>
       <td></td>
     </tr>
   </table>

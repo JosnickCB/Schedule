@@ -6,20 +6,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
    <title>Primero</title>
 </head>
 <body>
 
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='index.php'>Home</a></li>
-   <li><a href='#'>Primero</a></li>
+   <li class='active'><a href='#'>Home</a></li>
+   <li><a href='primero.php'>Primero</a></li>
    <li><a href='segundo.php'>Segundo</a></li>
    <li><a href='tercero.php'>Tercero</a></li>
    <li><a href='cuarto.php'>Cuarto</a></li>
    <li><a href='quinto.php'>Quinto</a></li>
-   <li><a href='#'>Ingresar</a></li>
+   <li><a href='login.php'>Ingresar</a></li>
 </ul>
 </div>
 <table class = flat-table>
@@ -47,7 +46,7 @@
       <td>Calculo en una variable teo (A)</td>
       <td>Ciencia de la Computacion I Teo (A)</td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>8.40 - 8.50</td>
       <td></td>
@@ -55,7 +54,7 @@
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>8.50 - 9.40</td>
       <td>Comunicación Integral (A)</td>
@@ -72,7 +71,7 @@
       <td>Comunicación Integral (A)</td>
       <td>Estructuras Discretas I Teoria A</td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>10.30 - 10.40</td>
       
@@ -80,7 +79,7 @@
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>10.40 - 11.30</td>
       <td>Estructuras Discretas II - Teo (A)</td>
@@ -130,14 +129,14 @@
       <td></td>
       <td>Example 10</td>
     </tr>
-    <!--><-->
+
       <td>15.40 - 15.50</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>15.50 - 16.40</td>
       <td>Fundamentos de Computación Lab A</td>
@@ -154,7 +153,7 @@
       <td>Inglés Prac B</td>
       <td>Ciencia de la Computación I lab A</td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>17.30 - 17.40</td>
       <td></td>
@@ -162,7 +161,7 @@
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>17.40 - 18.30</td>
       <td>Estructuras Discretas II - Teo (B)</td>
@@ -179,7 +178,7 @@
       <td>Calculo en una variable teo (B)</td>
       <td>Calculo en una variable Prac (B)</td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>19.20 - 19.30</td>
       <td></td>
@@ -187,7 +186,7 @@
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>19.30 - 20.10</td>
       <td>Arte Computacional</td>

@@ -6,8 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
-   <title>Primero</title>
+   <title>Tercero</title>
 </head>
 <body>
 
@@ -16,10 +15,10 @@
    <li class='active'><a href='index.php'>Home</a></li>
    <li><a href='primero.php'>Primero</a></li>
    <li><a href='segundo.php'>Segundo</a></li>
-   <li><a href='#'>Tercero</a></li>
+   <li><a href='tercero.php'>Tercero</a></li>
    <li><a href='cuarto.php'>Cuarto</a></li>
    <li><a href='quinto.php'>Quinto</a></li>
-   <li><a href='#'>Ingresar</a></li>
+   <li><a href='login.php'>Ingresar</a></li>
 </ul>
 </div>
 <table class = flat-table>
@@ -47,7 +46,7 @@
       <td>Mat. Aplc. a Comp lab (B)</td>
       <td>Sistemas Operativos lab (B)</td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>8.40 - 8.50</td>
       <td></td>
@@ -55,7 +54,7 @@
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>8.50 - 9.40</td>
       <td>Interdisciplinar II Teo (A)</td>
@@ -72,7 +71,7 @@
       <td>Ingeniería de Software II - prac (A)</td>
       <td>Mat. Aplc. a Comp prac (A)</td>
     </tr>   
-    <!--><-->
+
     <tr>
       <td>10.30 - 10.40</td>
       <td></td>
@@ -80,7 +79,7 @@
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>10.40 - 11.30</td>
       <td>Programación Competitiva A</td>
@@ -90,6 +89,7 @@
       <td>Programación Competitiva A</td>
     </tr>
     <tr>
+      <td>11.30 - 12.20</td>
       <td>Programación Competitiva A</td>
       <td></td>
       <td>EDA Lab B</td>
@@ -129,14 +129,14 @@
       <td>Ingeniería de Software II prac (B)</td>
       <td>Programación Competitiva B</td>
     </tr>
-    <!--><-->
+
       <td>15.40 - 15.50</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>15.50 - 16.40</td>
       <td>Programación Competitiva B</td>
@@ -153,7 +153,7 @@
       <td>EDA prac (B)</td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>17.30 - 17.40</td>
       <td></td>
@@ -161,7 +161,7 @@
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>17.40 - 18.30</td>
       <td></td>
@@ -178,7 +178,7 @@
       <td>Interdisciplinar II prac B</td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>19.20 - 19.30</td>
       <td></td>
@@ -186,7 +186,7 @@
       <td></td>
       <td></td>
     </tr>
-    <!--><-->
+
     <tr>
       <td>19.30 - 20.10</td>
       <td>Mat Aplc a Comp teo (B)</td>
