@@ -33,7 +33,7 @@
       <button type="button" id="btnTercero">Tercer Año</button>
       <button type="button" id="btnCuarto">Cuarto Año</button>
       <button type="button" id="btnQuinto">Quinto Año</button>
-      <button type="button" id="btnQuinto">Añadir curso</button>
+      <button type="button" id="btnAdd">Añadir curso</button>
    </div>
    
 
@@ -146,7 +146,7 @@
          );
       }
       });
-});
+   });
   
 </script>
 
