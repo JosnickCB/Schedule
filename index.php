@@ -7,7 +7,7 @@
    <!-- <link rel="stylesheet" href="styles.css"> -->
    <link rel="stylesheet" href="style/tablas.css">
 
-   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="js/ajax_first.js"></script>
    <!-- <script src="script.js"></script> -->
    <title>Inicio</title>
