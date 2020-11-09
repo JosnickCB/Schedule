@@ -138,7 +138,7 @@
          $('#content').text('loading');
       },
 
-      url: "createcurso.html",         
+      url: "indexs.php",         
       success : function(data){
          setTimeout(function(){
             $('#content').html(data);
