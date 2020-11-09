@@ -51,7 +51,7 @@
          url: "primero.php",         
          success : function(data){
             setTimeout(function(){
-               $('#content').html(data);
+               $('#content').php(data);
             },wait
             );
          }
@@ -69,7 +69,7 @@
          url: "segundo.php",         
          success : function(data){
             setTimeout(function(){
-               $('#content').html(data);
+               $('#content').php(data);
             },wait
             );
          }
@@ -87,7 +87,7 @@
          url: "tercero.php",         
          success : function(data){
             setTimeout(function(){
-               $('#content').html(data);
+               $('#content').php(data);
             },wait
             );
          }
@@ -105,7 +105,7 @@
          url: "cuarto.php",         
          success : function(data){
             setTimeout(function(){
-               $('#content').html(data);
+               $('#content').php(data);
             },wait
             );
          }
@@ -123,7 +123,7 @@
          url: "quinto.php",         
          success : function(data){
             setTimeout(function(){
-               $('#content').html(data);
+               $('#content').php(data);
             },wait
             );
          }
