@@ -36,9 +36,9 @@
                     echo "Ocurrió un error.\n";
                     exit;
                 }
-                echo "<table>"
+                echo "<table>";
                 while ($row = pg_fetch_row($result,null,PGSQL_ASSOC)) {
-                    echo "<tr>"
+                    echo "<tr>";
                     /*echo "<li><strong>"
                     ." id curso : ".$row['id_curso']
                     ." nombre : ".$row['nombre']
@@ -51,9 +51,9 @@
                         echo "<td>".$row['hora_entrada']."</td>";
                         echo "<td>".$row['hora_salida']."</td>";
                     //}
-                    echo "</tr>"
+                    echo "</tr>";
                 }
-                echo "</table>"
+                echo "</table>";
             }else{
                 echo json_encode(array(
                     'respuesta' => '200',
