@@ -33,7 +33,7 @@
       <button type="button" id="btnTercero">Tercer Año</button>
       <button type="button" id="btnCuarto">Cuarto Año</button>
       <button type="button" id="btnQuinto">Quinto Año</button>
-
+      <button type="button" id="btnQuinto">Añadir curso</button>
    </div>
    
 
@@ -129,6 +129,24 @@
          }
       });
    });
+
+   $('#btnAdd').click(function(){ 
+      var wait = 0;     
+      $.ajax({
+      
+      beforeSend: function(){
+         $('#content').text('loading');
+      },
+
+      url: "createcurso.html",         
+      success : function(data){
+         setTimeout(function(){
+            $('#content').html(data);
+         },wait
+         );
+      }
+      });
+});
   
 </script>
 
