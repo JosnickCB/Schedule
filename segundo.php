@@ -1,26 +1,42 @@
 <!DOCTYPE html>
-<html lang=''>
+<html lang='ES'>
 <head>
    <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <title>Segundo</title>
+   <script src="script.js"></script>
+   <title>Primero</title>
 </head>
 <body>
 
-<div id='cssmenu'>
+<!-- div id='cssmenu'>
 <ul>
-   <li class='active'><a href='#'>Home</a></li>
+   <li class='active'><a href='index.php'>Home</a></li>
    <li><a href='primero.php'>Primero</a></li>
-   <li><a href='segundo.php'>Segundo</a></li>
+   <li><a href='#'>Segundo</a></li>
    <li><a href='tercero.php'>Tercero</a></li>
    <li><a href='cuarto.php'>Cuarto</a></li>
    <li><a href='quinto.php'>Quinto</a></li>
-   <li><a href='login.php'>Ingresar</a></li>
+   <li><a href='#'>Ingresar</a></li>
 </ul>
-</div>
+</div> -->
+
+<!-- <a href="index.html">Home </a> || 
+<a href="#" id="segundo">Primer año</a> ||
+<a href="#" id="primero">Tercer año </a> || 
+<a href="#" id="segundo">Cuarto año</a> ||
+<a href="#" id="primero">Quinto año </a>
+<div id="target"> &nbsp</div> -->
+
+<a href="index.php"><button> Home </button></a> 
+<a href="#" id="primero"><button>Primer año</button></a> 
+<a href="#" id="tercero"><button>Tercer año</button></a> 
+<a href="#" id="cuarto"><button> Cuarto año</button></a> 
+<a href="#" id="quinto"><button>Quinto año</button> </a> 
+
+<div id="target"> &nbsp</div>
 <table class = flat-table>
     <tr>
       <th></th>
@@ -191,7 +207,7 @@
       <td></td>
       <td></td>
       <td></td>
-      <td>Algebra Lineal Numerica (Lab A)</td>
+      <td></td>
       <td></td>
     </tr>
   </table>
