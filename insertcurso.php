@@ -21,7 +21,7 @@
 
             if($respuesta>0 )
             {
-                echo "ser insertaron los datos";
+                echo "Done";
                 echo "<br/>";
                 $cadena="host='ec2-107-22-241-205.compute-1.amazonaws.com'
                 port=''
@@ -36,7 +36,7 @@
                     echo "Ocurrió un error.\n";
                     exit;
                 }
-                echo "<table>";
+                echo "<table border='1' cellspacing='0' cellpadding='0' width='200' align='center'>";
                 while ($row = pg_fetch_row($result,null,PGSQL_ASSOC)) {
                     echo "<tr>";
                     /*echo "<li><strong>"
@@ -75,3 +75,5 @@
         }
     }
 ?>
+<br>
+<a href="index.php"><button> Home </button></a>
