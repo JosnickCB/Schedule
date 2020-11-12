@@ -26,7 +26,18 @@
         $result3= pg_query("select *from curso");
         $row = pg_fetch_result($result,1,0);
         $rowi = explode(',',$row);
-        echo $rowi[0]."</br>"; 
+        echo $rowi[0]."</br>";
+        echo $rowi[1]."</br>"; 
+        echo $rowi[2]."</br>"; 
+        echo $rowi[3]."</br>"; 
+
+        $row = pg_fetch_result($result,1,1);
+        $rowi = explode(',',$row);
+        echo $rowi[0]."</br>";
+        echo $rowi[1]."</br>"; 
+        echo $rowi[2]."</br>"; 
+        echo $rowi[3]."</br>"; 
+
 
         while($row = pg_fetch_row($result3,null,PGSQL_ASSOC)) {
             echo "<li><strong>"
