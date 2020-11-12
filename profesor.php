@@ -6,25 +6,40 @@
     <title>Profesor</title>
 </head>
 <body>
-    <p>hola</p>
-    <table style="width:100%" border="1">
+    <button onclick="location.href='index.php'" type="button">Cerrar Sesión</button>
+    
     <?php
-        require 'SQLGlobal.php';
-
+        session_start();
+        error_reporting(E_ERROR | E_PARSE);
         $cadena="host='ec2-107-22-241-205.compute-1.amazonaws.com'
         port=''
         dbname='d9als99827c31n' 
         user='gpqwpiiktacwxs' 
         password='538976debbd8d639330ebbe6ab93d11c4d7dbab4478b4d3461d9cb13a79c7420'";
         $con=pg_connect($cadena) or die ("Error conexion.".pg_last_error());
-
-        $result = pg_query("select get_data(161616)");
-        $result2= pg_query("SELECT u.nombre, r.usu_dni,c.nombre,r.curso_id from relacion_usuario_curso r
-        inner join usuario u on u.dni=161616 and r.usu_dni=161616
-            inner join curso c on c.id_curso=r.curso_id and c.hora_entrada=hora_entrada and c.hora_salida=hora_salida");
         
-        $result3= pg_query("select *from curso");
-        $row = pg_fetch_result($result,0,0);
+        //echo $_SESSION['dni']; 
+        echo '<table style="width:100%" border="1" >';
+        $r1 = pg_query("select get_data(".$_SESSION['dni'].")");
+        if(!$r1){
+            echo "Usted no tiene horarios disponibles";
+        }
+        $i = 0;
+        $row = pg_fetch_result($r1,$i,0);
+        $rowi = explode(',',$row);
+        echo "<td align='center' colspan = '4'><h2>".str_replace('"','',(str_replace("(","",$rowi[0])))."</h2></td>";
+        $r1 = pg_query("select get_data(".$_SESSION['dni'].")");
+        while($row = pg_fetch_result($r1,$i,0)){
+            echo "<tr>";
+            $rowi = explode(',',$row);
+            echo "<th>".str_replace('(','',(str_replace('"','',$rowi[0])))."</th>";
+            echo "<th>".$rowi[1]."</th>";
+            echo "<th>".$rowi[2]."</th>";
+            echo "<th>".str_replace(')','',(str_replace('"','',$rowi[3])))."</th>";
+            echo "</tr>";
+            $i++;
+        }
+        /*$row = pg_fetch_result($result,0,0);
         $rowi = explode(',',$row);
         echo $rowi[0]."</br>";
         echo $rowi[1]."</br>"; 
@@ -57,10 +72,10 @@
                     ." id curso : ".$row['id_curso']
                     ." nombre : ".$row['nombre']
                     ." ngrupo: ".$row['ngrupo']
-                    ." hora salidad : ".$row['hora_entrda']
+                    ." hora salidad : ".$row['hora_entrada']
                     ." hora salida : ".$row['hora_salida']."</strong></li>";
                     echo "<br />\n";
-        }
+        }*/
     ?>
     </table>
 </body>
