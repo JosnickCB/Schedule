@@ -36,6 +36,19 @@
         echo $rowi[0]."</br>";
         echo $rowi[1]."</br>"; 
         echo $rowi[2]."</br>"; 
+        echo $rowi[3]."</br>";
+
+        $row = pg_fetch_result($result,2,0);
+        $rowi = explode(',',$row);
+        echo $rowi[0]."</br>";
+        echo $rowi[1]."</br>"; 
+        echo $rowi[2]."</br>"; 
+        echo $rowi[3]."</br>"; 
+        $row = pg_fetch_result($result,3,0);
+        $rowi = explode(',',$row);
+        echo $rowi[0]."</br>";
+        echo $rowi[1]."</br>"; 
+        echo $rowi[2]."</br>"; 
         echo $rowi[3]."</br>"; 
 
 
