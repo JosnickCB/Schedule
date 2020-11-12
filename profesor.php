@@ -24,19 +24,8 @@
             inner join curso c on c.id_curso=r.curso_id and c.hora_entrada=hora_entrada and c.hora_salida=hora_salida");
         
         $result3= pg_query("select *from curso");
-
-        print_r($result);
-
-        while($row = pg_fetch_row($result,null,PGSQL_ASSOC)) {
-            echo $row;
-            echo "<li><strong>"
-                    ." id curso : ".$row['id curso']
-                    ." nombre : ".$row['dni']
-                    ." ngrupo: ".$row['nombre']
-                    ." hora entrada : ".$row['id_curso']
-                    ."</strong></li>";
-                    echo "<br />\n";
-        }
+        $row = pg_fetch_result($result,1,0);
+        print_r($row);
 
         while($row = pg_fetch_row($result3,null,PGSQL_ASSOC)) {
             echo "<li><strong>"
