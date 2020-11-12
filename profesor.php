@@ -24,7 +24,7 @@
             inner join curso c on c.id_curso=r.curso_id and c.hora_entrada=hora_entrada and c.hora_salida=hora_salida");
         
         while($row = pg_fetch_row($result,null,PGSQL_ASSOC)) {
-            echo $row;
+            echo $row[0];
             echo "<li><strong>"
                     ." id curso : ".$row['nombre']
                     ." nombre : ".$row['dni']
