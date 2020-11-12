@@ -24,14 +24,14 @@
             inner join curso c on c.id_curso=r.curso_id and c.hora_entrada=hora_entrada and c.hora_salida=hora_salida");
         
         $result3= pg_query("select *from curso");
-        $row = pg_fetch_result($result,1,0);
+        $row = pg_fetch_result($result,0,0);
         $rowi = explode(',',$row);
         echo $rowi[0]."</br>";
         echo $rowi[1]."</br>"; 
         echo $rowi[2]."</br>"; 
         echo $rowi[3]."</br>"; 
 
-        $row = pg_fetch_result($result,1,1);
+        $row = pg_fetch_result($result,1,0);
         $rowi = explode(',',$row);
         echo $rowi[0]."</br>";
         echo $rowi[1]."</br>"; 
