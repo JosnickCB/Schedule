@@ -23,7 +23,9 @@
     if($pwd == $rt[4]){
         if($rt[2]==1){
             echo "<meta http-equiv='refresh' content='0;url=profesor.php'/>";
-            
+            $_SESSION['dni'] = $rt[0];
+        }else if($rt==2){
+            echo "<meta http-equiv='refresh' content='0;url=profesor.php'/>";
             $_SESSION['dni'] = $rt[0];
         }else{
             echo "Error inesperado";
