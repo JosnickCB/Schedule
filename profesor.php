@@ -26,10 +26,10 @@
         while($row = pg_fetch_row($result,null,PGSQL_ASSOC)) {
             echo $row;
             echo "<li><strong>"
-                    ." id curso : ".$row[0]
-                    ." nombre : ".$row[1]
-                    ." ngrupo: ".$row[2]
-                    ." hora entrada : ".$row[3]
+                    ." id curso : ".$row['nombre']
+                    ." nombre : ".$row['dni']
+                    ." ngrupo: ".$row['nombre']
+                    ." hora entrada : ".$row['id_curso']
                     ."</strong></li>";
                     echo "<br />\n";
         }
