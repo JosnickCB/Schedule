@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,47 +9,51 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  
-<div class="container">
-  <br>
-  <button type="button" onclick ="location.href='index.php'">Inicio</button>
-  <h2>Añadir curso:</h2>
-  <form method="post" action="insertcurso.php">
-    <div class="form-group">
-      <label for="email">Id Curso</label>
-      <input type="number" class="form-control" id="id_curso" placeholder="Id del curso" name="id_curso">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Nombre</label>
-      <input type="text" class="form-control" id="nombre" placeholder="Nombre del curso" name="nombre">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Tipo</label>
-      <input type="text" class="form-control" id="ngrupo" placeholder="Laboratorio o Teoria" name="ngrupo">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Hora Entrada</label>
-      <input type="time" class="form-control" id="hora_entrada" placeholder="Hora de Entrada" name="hora_entrada">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Hora Salida</label>
-      <input type="time" class="form-control" id="hora_salida" placeholder="Hora de Salida" name="hora_salida">
-    </div>
-    <input type="submit" name="submit" class="btn btn-primary" value="Submit">
-  </form>
-  <h2> Asignar Curso </h2>
-  <form method="post" action="asignarcursoprofesor.php">
-      <div>
-          <label for="dni_profesor">DNI Profesor:</label>
-          <input type="number" id="id_dni" name="id_dni">
+  <div class="row">
+    <div class="container">
+      <br>
+      <button type="button" onclick ="location.href='index.php'">Inicio</button>
+      <div class="col-md-6">
+        <h2>Añadir curso:</h2>
+        <form method="post" action="insertcurso.php">
+          <div class="form-group">
+            <label for="email">Id Curso</label>
+            <input type="number" class="form-control" id="id_curso" placeholder="Id del curso" name="id_curso">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre del curso" name="nombre">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Tipo</label>
+            <input type="text" class="form-control" id="ngrupo" placeholder="Laboratorio o Teoria" name="ngrupo">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Hora Entrada</label>
+            <input type="time" class="form-control" id="hora_entrada" placeholder="Hora de Entrada" name="hora_entrada">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Hora Salida</label>
+            <input type="time" class="form-control" id="hora_salida" placeholder="Hora de Salida" name="hora_salida">
+          </div>
+          <input type="submit" name="submit" class="btn btn-info" value="Submit">
+        </form>
       </div>
-      <div>
-          <label for="id_curso">ID Curso:</label>
-          <input type="number" id="curso_id" name="curso_id">
+      <div class="col-md-6">
+        <h2> Asignar Curso </h2>
+        <form method="post" action="asignarcursoprofesor.php">
+            <div class="form-group">
+                <label for="dni_profesor">DNI Profesor:</label>
+                <input type="number" id="id_dni" name="id_dni" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="id_curso">ID Curso:</label>
+                <input type="number" id="curso_id" name="curso_id" class="form-control">
+            </div>
+            <input type="submit" name="submit" class="btn btn-success" value="Submit">
+        </form>
       </div>
-      <input type="submit" name="submit" class="btn btn-primary" value="Submit">
-
-  </form>
-</div>
+    </div>
+  </div>
 </body>
-</html> 
+</html>
