@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Asignar Curso Profesor:</h2>    
-    <form method="post" action="asignarcursoprofesor.php">
+    <form method="post" action="../views/asignarcursoprofesor.php">
         <div>
             <label for="dni_profesor">DNI Profesor:</label>
             <input type="number" id="id_dni" name="id_dni">

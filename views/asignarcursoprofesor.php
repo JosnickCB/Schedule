@@ -1,5 +1,5 @@
 <?php
-    require 'SQLGlobal.php';
+    require_once('../models/SQLGlobal.php');
     if($_SERVER['REQUEST_METHOD']=='POST')
     {
         try{
