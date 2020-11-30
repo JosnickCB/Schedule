@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<form action="../views/validator.php" method="post">
+<form action="./controllers/validator.php" method="post">
   <div class="container">
     <label for="uname"><b>Usuario</b></label>
     <input type="text" placeholder="Ingrese Usuario" name="uname" required>
@@ -21,7 +21,7 @@
     <button type="submit">Ingresar</button>
     <br>
     <br>
-    <button type="button" onclick ="location.href='../views/index.php'">Cancelar</button>
+    <button type="button" onclick ="location.href='./index.php'">Cancelar</button>
   </div>
   <br>
   <img src = "pabellonCS.png" width="1350" height="575">

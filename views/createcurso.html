@@ -12,10 +12,10 @@
   <div class="row">
     <div class="container">
       <br>
-      <button type="button" onclick ="location.href='index.php'">Inicio</button>
+      <button type="button" onclick ="location.href='../index.php'">Inicio</button>
       <div class="col-md-6">
         <h2>Añadir curso:</h2>
-        <form method="post" action="insertcurso.php">
+        <form method="post" action="../controllers/insertcurso.php">
           <div class="form-group">
             <label for="email">Id Curso</label>
             <input type="number" class="form-control" id="id_curso" placeholder="Id del curso" name="id_curso">
@@ -41,7 +41,7 @@
       </div>
       <div class="col-md-6">
         <h2> Asignar Curso </h2>
-        <form method="post" action="asignarcursoprofesor.php">
+        <form method="post" action="../controllers/asignarcursoprofesor.php">
             <div class="form-group">
                 <label for="dni_profesor">DNI Profesor:</label>
                 <input type="number" id="id_dni" name="id_dni" class="form-control">

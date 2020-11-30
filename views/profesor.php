@@ -6,7 +6,7 @@
     <title>Profesor</title>
 </head>
 <body>
-    <button onclick="location.href='index.php'" type="button">Cerrar Sesión</button>
+    <button onclick="location.href='../index.php'" type="button">Cerrar Sesión</button>
     
     <?php
         session_start();
