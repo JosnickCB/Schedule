@@ -4,8 +4,6 @@
    <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- <link rel="stylesheet" href="styles.css"> -->
-   <!-- <link rel="stylesheet" href="style/tablas.css"> -->
    <link rel="stylesheet" href="style/penguin.css">
 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,23 +17,23 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
    <ul class="navbar-nav">
    <li class="nav-item">
-      <a class="nav-link" id="segundo" href="./views/primero.php">Primer Año</a>
+      <a class="nav-link" id="primero" href="./views/primero.php">Primer Año</a>
    </li>
    <li class="nav-item">
-      <a class="nav-link" id="tercero" href="./views/segundo.php">Segundo Año</a>
+      <a class="nav-link" id="segundo" href="./views/segundo.php">Segundo Año</a>
    </li>
    <li class="nav-item">
-      <a class="nav-link" id="cuarto" href="./views/tercero.php">Tercer Año</a>
+      <a class="nav-link" id="tercero" href="./views/tercero.php">Tercer Año</a>
    </li>
    <li class="nav-item">
-      <a class="nav-link" id="quinto" href="./views/cuarto.php">Cuarto Año</a>
+      <a class="nav-link" id="cuarto" href="./views/cuarto.php">Cuarto Año</a>
    </li>
    <li class="nav-item">
       <a class="nav-link" id="quinto" href="./views/quinto.php">Quinto Año</a>
    </li>
 
    <li class="nav-item">
-         <a class="nav-link" id="quinto" href="./views/login.php">Ingresar</a>
+         <a class="nav-link" id="login" href="./views/login.php">Ingresar</a>
    </li>
    </ul>
    </nav>

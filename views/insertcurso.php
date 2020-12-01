@@ -39,18 +39,9 @@
                 echo "<table border='1' cellspacing='0' cellpadding='0' width='200' align='center'>";
                 while ($row = pg_fetch_row($result,null,PGSQL_ASSOC)) {
                     echo "<tr>";
-                    /*echo "<li><strong>"
-                    ." id curso : ".$row['id_curso']
-                    ." nombre : ".$row['nombre']
-                    ." ngrupo: ".$row['ngrupo']
-                    ." hora entrada : ".$row['hora_entrada']
-                    ." hora salidad : ".$row['hora_salida']."</strong></li>";
-                    echo "<br />\n";*/
-                    //for($i = 0;$i<3;$i++){
                         echo "<td>".$row['nombre']."</td>";
                         echo "<td>".$row['hora_entrada']."</td>";
                         echo "<td>".$row['hora_salida']."</td>";
-                    //}
                     echo "</tr>";
                 }
                 echo "</table>";

@@ -14,7 +14,7 @@
                 array($id_dni,$curso_id)
             );
            if($respuesta>0 ){
-                echo "se asignaron lo cursos satisfactoriamente";
+                echo "Se asignaron lo cursos satisfactoriamente";
                 
             }else{
                 echo json_encode(array(
