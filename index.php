@@ -13,6 +13,11 @@
    <title>Inicio</title>
 </head>
 <body>
+<?php
+   if (session_status() == PHP_SESSION_ACTIVE) {
+      session_destroy();
+   }
+?>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
    <ul class="navbar-nav">
