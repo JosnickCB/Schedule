@@ -62,11 +62,11 @@
 	    			<ul>
 	    			<?php
         				$res2 = pg_query($con,"select get_days(".$_SESSION['dni'].",'Martes');");
-        				$row = pg_fetch_row($res2);
         				for($i=0;$i<pg_num_rows($res2);$i++){
+        					$row = pg_fetch_row($res2);
         					echo "<li class='cd-schedule__event'>";
-							echo "<a data-start='".substr($row[$i],1,5)."' data-end='".substr($row[$i],10,5)."'  data-content='event-yoga-1' data-event='event-2' href='#'>";
-							echo "<em class='cd-schedule__name'>".substr($row[$i],20,-2)."</em>";
+							echo "<a data-start='".substr($row[0],1,5)."' data-end='".substr($row[0],10,5)."'  data-content='event-yoga-1' data-event='event-2' href='#'>";
+							echo "<em class='cd-schedule__name'>".substr($row[0],20,-2)."</em>";
 							echo "</a>";
 							echo "</li>";
         				}	
@@ -78,11 +78,11 @@
 	    			<ul>
 	    				<?php
         				$res3 = pg_query("select get_days(".$_SESSION['dni'].",'Miercoles');");
-        				$row = pg_fetch_row($res3);
         				for($i=0;$i<pg_num_rows($res3);$i++){
+        					$row = pg_fetch_row($res3);
         					echo "<li class='cd-schedule__event'>";
-							echo "<a data-start='".substr($row[$i],1,5)."' data-end='".substr($row[$i],10,5)."'  data-content='event-yoga-1' data-event='event-2' href='#'>";
-							echo "<em class='cd-schedule__name'>".substr($row[$i],20,-2)."</em>";
+							echo "<a data-start='".substr($row[0],1,5)."' data-end='".substr($row[0],10,5)."'  data-content='event-yoga-1' data-event='event-2' href='#'>";
+							echo "<em class='cd-schedule__name'>".substr($row[0],20,-2)."</em>";
 							echo "</a>";
 							echo "</li>";
         				}	
@@ -94,14 +94,14 @@
 	    			<ul>
 	    				<?php
         				$res4 = pg_query("select get_days(".$_SESSION['dni'].",'Jueves');");
-        				$row = pg_fetch_row($res4);
         				for($i=0;$i<pg_num_rows($res4);$i++){
+        					$row = pg_fetch_row($res4);
         					echo "<li class='cd-schedule__event'>";
-							echo "<a data-start='".substr($row[$i],1,5)."' data-end='".substr($row[$i],10,5)."'  data-content='event-yoga-1' data-event='event-2' href='#'>";
-							echo "<em class='cd-schedule__name'>".substr($row[$i],20,-2)."</em>";
+							echo "<a data-start='".substr($row[0],1,5)."' data-end='".substr($row[0],10,5)."'  data-content='event-yoga-1' data-event='event-2' href='#'>";
+							echo "<em class='cd-schedule__name'>".substr($row[0],20,-2)."</em>";
 							echo "</a>";
 							echo "</li>";
-        				}
+        				}	
 					?>
 	    			</ul>
 	    		</li>
@@ -110,11 +110,11 @@
 	    			<ul>
 	    				<?php
         				$res5 = pg_query("select get_days(".$_SESSION['dni'].",'Viernes');");
-        				$row = pg_fetch_row($res5);
         				for($i=0;$i<pg_num_rows($res5);$i++){
+        					$row = pg_fetch_row($res5);
         					echo "<li class='cd-schedule__event'>";
-							echo "<a data-start='".substr($row[$i],1,5)."' data-end='".substr($row[$i],10,5)."'  data-content='event-yoga-1' data-event='event-2' href='#'>";
-							echo "<em class='cd-schedule__name'>".substr($row[$i],20,-2)."</em>";
+							echo "<a data-start='".substr($row[0],1,5)."' data-end='".substr($row[0],10,5)."'  data-content='event-yoga-1' data-event='event-2' href='#'>";
+							echo "<em class='cd-schedule__name'>".substr($row[0],20,-2)."</em>";
 							echo "</a>";
 							echo "</li>";
         				}	

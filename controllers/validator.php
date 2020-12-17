@@ -25,7 +25,7 @@
             echo "<meta http-equiv='refresh' content='0;url=../views/profesor.php'/>";
             $_SESSION['dni'] = $rt[0];
         }else if($rt[2]==2){
-            echo "<meta http-equiv='refresh' content='0;url=../views/createcurso.html'/>";
+            echo "<meta http-equiv='refresh' content='0;url=../views/admin.php'/>";
             $_SESSION['dni'] = $rt[0];
         }else{
             echo "Error inesperado";

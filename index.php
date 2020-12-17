@@ -41,7 +41,7 @@
          <a class="nav-link" id="login" href="./views/login.php">Ingresar</a>
    </li>
    </ul>
-   </nav>
+</nav>
 <div id="page"></div>
 
 <!-- IMAGE PENGUIN -->
