@@ -21,7 +21,7 @@
     <button type="submit">Ingresar</button>
     <br>
     <br>
-    <button type="button" onclick ="location.href='./index.php'">Cancelar</button>
+    <button type="button" onclick ="location.href='../index.php'">Cancelar</button>
   </div>
   <br>
   <img src = "pabellonCS.png" width="1350" height="575">

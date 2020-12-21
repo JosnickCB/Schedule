@@ -6,6 +6,26 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> 
+   <style>
+   #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+   }
+   #customers td, #customers th {
+   border: 1px solid #ddd;
+   padding: 8px;
+   }
+   #customers tr:nth-child(even){background-color: #f2f2f2;}
+   #customers tr:hover {background-color: #ddd;}
+   #customers th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #343a40;
+   color: white;
+   }
+   </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -36,7 +56,7 @@
       $con = pg_connect($cadena) or die ("Error conexion.".pg_last_error());
       $res1 = pg_query("select ");
    ?-->
-   <table align="center" , style="width : 50%" border="1px" >
+   <table id = "customers" >
       <tr>
          <th>Nombre</th>
          <th>Total de horas</th>

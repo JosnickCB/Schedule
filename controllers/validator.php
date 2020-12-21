@@ -17,7 +17,7 @@
     $r = pg_query($con,"SELECT * FROM usuarios WHERE correo = '".$user."'");
     if(!$r){
         echo "<h1>Usuario o contraseña inválido</h1>";
-        echo "<meta http-equiv='refresh' content='10;url=./views/login.php'/>";
+        echo "<meta http-equiv='refresh' content='5;url=./views/login.php'/>";
     }
     $rt = pg_fetch_row($r);
     if($pwd == $rt[4]){
@@ -29,11 +29,11 @@
             $_SESSION['dni'] = $rt[0];
         }else{
             echo "Error inesperado";
-            echo "<meta http-equiv='refresh' content='10;url=../views/index.php'/>";
+            echo "<meta http-equiv='refresh' content='5;url=../index.php'/>";
         }
     }else{
         echo "<h1>Usuario o contraseña inválido</h1>";
-        echo "<meta http-equiv='refresh' content='10;url=../views/login.php'/>";
+        echo "<meta http-equiv='refresh' content='5;url=../views/login.php'/>";
     }
 ?>
 
