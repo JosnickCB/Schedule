@@ -71,8 +71,6 @@
          echo "</td>";
          echo "</tr>";
       }
-      /*print_r();
-      print_r(pg_fetch_row($res1));*/
    ?>
 </table>
    

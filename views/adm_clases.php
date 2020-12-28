@@ -22,7 +22,7 @@
       <a class="nav-link" id="Profesores" href="adm_profesor.php">Profesores</a>
    </li>
    <li class="nav-item">
-      <a class="nav-link" id="Clases" href="adm_clases.php">Clases</a>
+      <a class="nav-link" id="Clases" href="#">Clases</a>
    </li>
    <li class="nav-item">
       <a class="nav-link" id="asg_p" href="adm_asg_prof.php">Asignar Cursos</a>
@@ -213,9 +213,9 @@
 	    </div>
 	  
 	    <div class="cd-schedule__cover-layer"></div>
- 	</div> <!-- .cd-schedule -->
+ 	</div> 
 
-    <script src="../assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='ES'>
 <head>
-    <title>Workplace Complaint Form</title>
+    <title>Asignación</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -125,7 +125,7 @@
     <div class="testbox">
       <form action="admin.php">
         <h1>Asignación de profesores a cursos</h1>
-        <div class="item">
+        <div id="curse" class="item">
           <p>Curso</p>
           <select>
             <option value="">*Seleccione Curso*</option>
@@ -159,10 +159,37 @@
           </select>
         </div>
         <div class="item">
-          <p>Datos del Profesor</p>
+          <p>Hora Entrada</p>
+          <select>
+            <option value="">*Hora*</option>
+            <option value="A">7.00 a.m</option>
+            <option value="B">8.50 a.m</option>
+            <option value="C">10.40 a.m</option>
+            <option value="D">12.20 p.m</option>
+            <option value="F">2.00 p.m</option>
+            <option value="G">3.50 p.m</option>
+            <option value="H">5.40 p.m</option>
+            <option value="I">7.20 p.m</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Hora Salida</p>
+          <select>
+            <option value="">*Hora*</option>
+            <option value="A">7.50 a.m</option>
+            <option value="B">9.40 a.m</option>
+            <option value="C">11.30 a.m</option>
+            <option value="D">13.10 p.m</option>
+            <option value="F">2.50 p.m</option>
+            <option value="G">4.30 p.m</option>
+            <option value="H">6.30 p.m</option>
+            <option value="I">8.10 p.m</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Código/DNI Profesor</p>
           <div>
-            <input type="text" name="name" placeholder="Nombres" />
-            <input type="text" name="name" placeholder="Apellidos" />
+            <input type="text" name="name" placeholder="Código/DNI" />
           </div>
         </div>
         <div class="item">
